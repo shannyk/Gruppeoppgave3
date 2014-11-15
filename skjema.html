@@ -1,0 +1,129 @@
+<!doctype HTML>
+
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Lilleøy Helsepark</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
+	<script src="js/slides.min.jquery.js"></script>
+	<script>
+		$(function(){
+			$('#slides').slides({
+				preload: true,
+				preloadImage: 'img/loading.gif',
+				play: 6000,
+				pause: 5500,
+				hoverPause: true
+			});
+		});
+
+		$(document).ready(function(){
+            $("#gallery img").animate({ "opacity" : .5 });
+
+            $("#gallery img").hover(function(){
+                $(this).stop().animate({ "opacity" : 1 });
+            	}, 
+            
+            function(){
+                $(this).stop().animate({ "opacity" : .5 });
+            	});
+        });
+	</script>
+	<link href="global.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+	<div class="container ClearFix">
+
+		<div class="upper">
+
+			<img src="bilder/SOCIAL_ICONS.png" class="social">
+		</div>
+			
+	
+
+
+
+			<div id="nav">
+        <img src="bilder/logo.png" class="logo">
+				<div id="nav_wrapper">
+ 					<ul> 
+      					<li>
+      						<a href="tjenester.html">Tjenester</a>
+      						<ul>
+      							<li><a href="#">Allmennmedisin</a></li>
+      							<li><a href="skjema.html">Tannlege</a></li>
+      							<li><a href="#">Kjeveortoped</a></li>
+      							<li><a href="#">Om Lilleøy Helsepark</a></li>
+      							<li><a href="#">Om Lilleøy Kommune</a></li>
+   				 			</ul>
+   				 		</li>	
+      					<li><a href="#">Kontaktinformasjon</a></li><li>
+      						<a href="#">Åpningstider</a></li><li>
+      						<a href="#">Om oss</a></li><li>
+                  <a href="index.html">Forsiden</a></li>
+
+   					</ul>
+   				</div>
+			</div>
+
+<div class="container clearFix">
+  <div class="header">
+    <div class="header-left"><h1> Bestill time</h1></div>
+    <div class="header-right"><a href="skjema.html">Hjem</a></div>
+  </div>
+  <div class="content">
+    <fieldset>
+      <legend>Fyll ut feltene under:</legend>
+      <label class="inputlabel" for="fornavn">Fornavn:</label>
+      <input id="fornavn" type="text" name="navn" required>
+      <br>
+      <label class="inputlabel" for="etternavn">Etternavn:</label>
+      <input id="etternavn" type="text" name="enavn" required>
+      <br>
+      <label class="inputlabel" for="telefonnummer">Telefonnummer:</label>
+      <input id="telefonnummeret" type="text" name="tlf" required>
+      <br>
+      <label class="inputlabel" for="mail">E-post:</label>
+      <input id= "mail" text name="epost" required>
+      <br><br><br>
+      <h4>Hva gjelder henvendelsen</h4>
+      <textarea name="melding" rows="10" cols="50" class="tekstfelt">
+      </textarea>
+      <br>
+      <input class="sendbtn" type="submit" value="Send">
+      <input class="btn" type="submit" value="Slett">
+    </fieldset> 
+  </div>		
+	
+ 
+
+  <div class="footer">
+
+      <div class="footArt"><h4><b>Kontaktinformasjon</b></h4><br>
+      Besøksadresse: Kirkegata 20,<br> 
+      3208 Lilleøy.<br>
+      Telefon: 31 44 83 10<br>
+      </div>
+
+       <div class="footArt"><h4><b>Veibeksrivelse</b></h4><br>
+      For veibeskrivelse, trykk <u>her</u>  <br><br><br>
+
+       </div>
+
+      <div class="footArt"><h4><b>Åpningstider</b></h4><br>
+        Mandag – Fredag: 8 -20<br>
+        Lørdag – Søndag: 9 – 18
+       </div>
+
+  </div> 
+
+
+</div>
+
+
+</body>
+
+</html>

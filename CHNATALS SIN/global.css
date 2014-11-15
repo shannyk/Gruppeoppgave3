@@ -1,0 +1,152 @@
+html body {
+	margin: 0;
+	padding: 0;
+	padding-top: 2em;
+	font: 0.9em Arial, sans-serif;
+}
+
+html {
+	background-color: #CCCCCC; 
+	-webkit-background-color;
+	-moz-background-color;
+	-o-background-color;
+	background-color;
+}
+
+/*Header*/
+.header-left {
+	float: left;
+}
+
+.header-right {
+	float: right;
+}
+
+/*Main*/
+
+.container {
+	width: 80%;
+	height: 900px;
+	margin:auto;
+	position: relative;
+	background-color: #fff;
+}
+
+ul{
+	width: 500px;
+}
+
+ul li {
+	list-style: none;
+	float: left;
+	margin-left: 2em;
+}
+
+a:link, a:visited{
+	color: #ACD1E9;
+	font-size: 1.2em;
+	text-decoration: none;
+	font-weight: bold; 
+}
+
+a:hover{
+	color: #43d5ef;
+}
+
+.content{
+	width: 96%;
+	float: left;
+	margin: 2em 0 0 2em;
+}
+
+/*Font*/
+
+h1{
+	margin: 0 0 0 1em;
+	padding-top: 1em;
+	color: #ACD1E9;
+}
+
+h2{
+	margin:0 0 0 1em;
+	padding-right: 1em;
+	color:  #ACD1E9;
+}
+
+.clearFix:after{
+	content: ".";
+	visibility: hidden;
+	display: block;
+	height: 0;
+	clear: both;
+}
+
+
+
+/*Form*/
+
+form{
+	width: 80%;
+	font-size: 0.9em;
+	border: 1px dotted #fff;
+}
+
+fieldset{
+	background-color: #ACD1E9;
+	-moz-border-radius:20px;
+	-webkit-border-radius:20px;
+	-o-border-radius:20px;
+	border-radius:10px;
+}
+
+legend{
+	font-style: regular;
+}
+
+.inputlabel{
+	width: 80px;
+	display: inline-block;
+	padding: 0.5em;
+}
+
+h4{
+	margin: 1.5em 0 1em 0.6em;
+}
+
+.tekstfelt{
+	margin: 0 0 0 0.6em;
+	-moz-border-radius:20px;
+	-webkit-border-radius:20px;
+	-o-border-radius:20px;
+	border-radius:10px;
+	-moz-tab-size:4;
+	-webkit-tab-size:4;
+	-o-tab-size:4;
+}
+
+.btn{
+	padding: 1em 1em 1em 1em;
+	margin-left: 0.6em;
+	-moz-border-radius:20px;
+	-webkit-border-radius:20px;
+	-o-border-radius:20px;
+	border-radius:10px;
+	padding: 0.2em;
+}
+
+input[type=submit]{
+	padding: 1em 1em 1em 1em;
+	margin-left: 0.6em;
+	-moz-border-radius:20px;
+	-webkit-border-radius:20px;
+	-o-border-radius:20px;
+	border-radius:20px;
+}
+
+form input:not([type=submit]){
+	-moz-border-radius:20px;
+	-webkit-border-radius:20px;
+	-o-border-radius:20px;
+	border-radius:10px;
+	padding: 0.2em;
+}

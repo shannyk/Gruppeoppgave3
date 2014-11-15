@@ -1,0 +1,144 @@
+<!doctype HTML>
+
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Lilleøy Helsepark</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
+	<script src="js/slides.min.jquery.js"></script>
+	<script>
+		$(function(){
+			$('#slides').slides({
+				preload: true,
+				preloadImage: 'img/loading.gif',
+				play: 6000,
+				pause: 5500,
+				hoverPause: true
+			});
+		});
+
+		$(document).ready(function(){
+            $("#gallery img").animate({ "opacity" : .5 });
+
+            $("#gallery img").hover(function(){
+                $(this).stop().animate({ "opacity" : 1 });
+            	}, 
+            
+            function(){
+                $(this).stop().animate({ "opacity" : .5 });
+            	});
+        });
+	</script>
+	<link href="global.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+	<div class="container ClearFix">
+
+		<div class="upper">
+
+			<img src="bilder/SOCIAL_ICONS.png" class="social">
+		</div>
+			
+	
+
+
+
+			<div id="nav">
+        <img src="bilder/logo.png" class="logo">
+				<div id="nav_wrapper">
+ 					<ul> 
+      					<li>
+      						<a href="tjenester.html">Tjenester</a>
+      						<ul>
+      							<li><a href="#">Allmennmedisin</a></li>
+      							<li><a href="skjema.html">Tannlege</a></li>
+      							<li><a href="#">Kjeveortoped</a></li>
+      							<li><a href="#">Om Lilleøy Helsepark</a></li>
+      							<li><a href="#">Om Lilleøy Kommune</a></li>
+   				 			</ul>
+   				 		</li>	
+      					<li><a href="#">Kontaktinformasjon</a></li><li>
+      						<a href="#">Åpningstider</a></li><li>
+      						<a href="#">Om oss</a></li>
+
+   					</ul>
+   				</div>
+			</div>
+		
+
+
+
+		<div id="slides">
+				<div class="slides_container">
+				
+					<img src="bilder/allmennmedisin.jpg" width="650" height="350" alt="Slide 1"></a>
+					<img src="bilder/dentist.jpg" width="650" height="350" alt="Slide 2"></a>
+					<img src="bilder/helsestasjon.jpg" width="650" height="350" alt="Slide 3"></a>
+					<img src="bilder/kjeveortoped.jpg" width="650" height="350" alt="Slide 4"></a>
+					<img src="bilder/kommune.jpg" width="650" height="350" alt="Slide 5"></a>
+					<img src="bilder/helsepark.jpg" width="650" height="350" alt="Slide 6"></a>
+						
+		</div>
+</div>
+ <br><br>
+
+<div class="fix"><!-- IE --></div>
+
+   	
+<div id="gallery">
+        <ul>
+            <li  id="first">
+            	<a href="http://www.sandefjordhelsepark.no/category/oversikt-aktorer/?cat=spesialister" title="Allmennmedisin" alt="Allmennmedisin" ><img src="bilder/allmennmedisin.png" width="105" height="90"  />
+            		</a></li>
+
+            <li>
+            	<a href="http://www.sandefjordhelsepark.no/category/oversikt-aktorer/?cat=fastleger" title="Tannlege" alt="Tannlege" ><img src="bilder/tannlege.png" width="109" height="90"  /></a></li>
+
+          <li>
+            	<a href="http://www.sandefjordhelsepark.no/category/oversikt-aktorer/?cat=muskelskjelett" title="Kjeveortoped" alt="Kjeveortoped" ><img src="bilder/kjeveortoped.png" width="109" height="90" /></a></li>
+
+          <li>
+            	<a href="http://www.sandefjordhelsepark.no/category/oversikt-aktorer/?cat=samtaleterapeuter" title="Helsestasjon" alt="Helsestasjon" ><img src="bilder/helsestasjon.png"width="109" height="90" /></a></li>
+
+            <li>
+            	<a href="http://www.sandefjordhelsepark.no/category/oversikt-aktorer/?cat=medisinsk-service" title="Om Lilleøy helsepark" alt="Om Lilleøy helsepark"><img src="bilder/helsepark.png" width="109" height="90" /></a></li>
+
+            <li>
+            	<a href="http://www.sandefjordhelsepark.no/category/oversikt-aktorer/?cat=trening" title="Om Lilleøy kommune" alt="Om Lilleøy kommune" ><img src="bilder/kommune.png" width="109" height="90" /></a></li>
+          
+        </ul>
+
+
+    </div>
+     <br><br><br>
+    	
+  <div class="footer">
+
+    <div class="footArt"><h4><b>Kontaktinformasjon</b></h4><br>
+      Besøksadresse: Kirkegata 20,<br> 
+      3208 Lilleøy.<br>
+      Telefon: 31 44 83 10<br>
+    </div>
+
+    <div class="footArt"><h4><b>Veibeksrivelse</b></h4><br>
+      For veibeskrivelse, trykk <u>her</u>  <br><br><br>
+
+    </div>
+
+    <div class="footArt"><h4><b>Åpningstider</b></h4><br>
+        Mandag – Fredag: 8 -20<br>
+        Lørdag – Søndag: 9 – 18
+    </div>
+
+  </div> 
+
+
+	</div>
+
+
+</body>
+
+</html>
